@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#504545"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".ex3.activities.B3Activity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CHỌN ĐÁP ÁN ĐÚNG"
+        android:textColor="#E6D32C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Question"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#90D343"
+        android:padding="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tv_Stt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#587735"
+        android:padding="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_Question"
+        app:layout_constraintStart_toEndOf="@+id/tv_Question"
+        app:layout_constraintTop_toTopOf="@+id/tv_Question" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#36ACE1"
+        android:padding="20dp"
+        android:text="A"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Question" />
+
+    <TextView
+        android:id="@+id/tv_QuestionA"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#5A4E4E"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#C54646"
+        android:padding="20dp"
+        android:text="B"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/tv_QuestionB"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#5A4E4E"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/btn_A"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:text="A"
+        android:textColor="#36ACE1"
+        android:textSize="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/btn_B"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:text="B"
+        android:textSize="80dp"
+        android:textColor="#C54646"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_A"
+        app:layout_constraintStart_toEndOf="@+id/btn_A"
+        app:layout_constraintTop_toTopOf="@+id/btn_A" />
+</androidx.constraintlayout.widget.ConstraintLayout>
